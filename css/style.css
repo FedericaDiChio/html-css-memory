@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-clearfix::after {
+.clearfix::after {
     clear: both;
     display: table;
     content: "";
@@ -17,15 +17,6 @@ body {
     text-align: center;
 }
 
-/* header  */
-header {
-    font-size: 40px;
-   text-transform: uppercase;
-    color: white;
-}
-
-/* corpo centrale */
-
 .container {
     width: 1000px;
     margin: 0 auto;
@@ -33,12 +24,20 @@ header {
 }
 
 
+/* header  */
+header {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+/* corpo centrale */
+
 .col {
-    width: 20%;
-    margin: 10px;
+    width: 23%;
+    margin: 1%;
     float: left;
-    
-    
 }
 
 .card {
@@ -71,8 +70,8 @@ header {
 }
 
 
-.card-back:hover{
-    display:none;
+.card:hover .card-back {
+    opacity: 0;
 }
 
 .card:hover h4 {
