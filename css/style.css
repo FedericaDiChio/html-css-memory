@@ -5,3 +5,22 @@
     padding: 0;
 }
 
+clearfix::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+body {
+    font-family: 'Nerko One', cursive;;
+    background-color: cadetblue;
+}
+
+/* header  */
+
+header {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
