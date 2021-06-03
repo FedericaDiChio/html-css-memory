@@ -14,13 +14,67 @@ clearfix::after {
 body {
     font-family: 'Nerko One', cursive;;
     background-color: cadetblue;
+    text-align: center;
 }
 
 /* header  */
-
 header {
     font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
+   text-transform: uppercase;
     color: white;
+}
+
+/* corpo centrale */
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+
+.col {
+    width: 20%;
+    margin: 10px;
+    float: left;
+    
+    
+}
+
+.card {
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.card img {
+    width: 100%;
+}
+ 
+.card h4 {
+   font-size: 30px;
+   color:crimson;
+}
+
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-image: url(../img/pattern.png);
+    background-size: contain;
+    background-position: center;
+}
+
+
+.card-back:hover{
+    display:none;
+}
+
+.card:hover h4 {
+    color: orange;
 }
